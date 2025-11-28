@@ -1,0 +1,31 @@
+# Frontend
+ai-school-frontend/node_modules
+ai-school-frontend/dist
+ai-school-frontend/.vite
+ai-school-frontend/.cache
+
+# Backend
+WebModule/build
+WebModule/.gradle
+
+# IDE
+.idea
+.vscode
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Logs
+*.log
+

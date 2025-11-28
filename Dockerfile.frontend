@@ -1,0 +1,20 @@
+# Dockerfile for React Frontend (Development Mode)
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Copy package files
+COPY ai-school-frontend/package*.json ./
+
+# Install dependencies
+RUN npm ci
+
+# Copy source code
+COPY ai-school-frontend/ .
+
+# Expose port
+EXPOSE 3000
+
+# Start development server
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
+
